@@ -10,17 +10,31 @@ class App extends Component {
   };
   makeReservation = (state, e) => {
     e.preventDefault();
-    const newState = state;
+    const key = Date.now();
+    const newState = { ...state, key, id: key };
+    e.currentTarget.reset();
     const combinedState = [...this.state.reservations, newState];
     this.setState({ reservations: combinedState });
+  };
+
+  removeReservation = key => {
+    const output = this.state.reservations.filter(reservation => {
+      if (reservation.id !== key) {
+        return reservation;
+      }
+    });
+    this.setState({ reservations: output });
   };
 
   render() {
     return (
       <div className="App">
-        <header>Title</header>
+        <header className="app-title">Turing Cafe Reservations</header>
         <FormBar makeReservation={this.makeReservation} />
-        <CardSection />
+        <CardSection
+          reservations={this.state.reservations}
+          removeReservation={this.removeReservation}
+        />
       </div>
     );
   }
