@@ -4,7 +4,7 @@ This application was built with `create-react-app`.
 
 ### Set Up
 
-Clone down this repo.
+Clone down this repo. Hello.
 
 On GitHub, create a new, empty repository and name it something like 'turing-cafe-fe'.
 
@@ -28,7 +28,7 @@ We do want to see good commit habits - atomic commits that log small, focused ch
 
 Pull down the [API repo](https://github.com/turingschool-examples/turing-cafe-api). Set up instructions are in that repository's README.
 
-Do *not* nest this inside your front-end repository.
+Do _not_ nest this inside your front-end repository.
 
 ### Iteration 1
 
@@ -44,7 +44,7 @@ When the user clicks the `Make Reservation` button, the application should make 
 
 **You may not have any fetch calls in any component other than App!**
 
-(If you have time to refactor your fetch calls into a separate helper file, that is fine, but it is *NOT* a requirement for this application.)
+(If you have time to refactor your fetch calls into a separate helper file, that is fine, but it is _NOT_ a requirement for this application.)
 
 ### Iteration 4 (extension)
 
