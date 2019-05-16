@@ -44,7 +44,7 @@ class FormBar extends Component {
             placeholder="Number of guests"
             onChange={this.collectInputs}
           />
-          <button>Make Reservation</button>
+          <button className="btn">Make Rineservation</button>
         </form>
       </div>
     );
