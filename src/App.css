@@ -24,10 +24,8 @@ input[type="text"] {
 
 .CardSection {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex-wrap: wrap;
-
-  width: 95%;
 }
 
 .Card {
